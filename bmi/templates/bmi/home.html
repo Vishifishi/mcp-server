@@ -54,6 +54,14 @@
     </div>
     {% endif %}
 
+    {% if calories %}
+    <div class="result">
+    <   h3>Recommended Daily Calories</h3>
+        <p><strong>{{ calories }} kcal/day</strong></p>
+    </div>
+    {% endif %}
+
+
     {% if error %}
         <p style="color:red">{{ error }}</p>
     {% endif %}
