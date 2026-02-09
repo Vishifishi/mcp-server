@@ -1,5 +1,6 @@
 from django.shortcuts import render
 
+
 def home(request):
     context = {}
 
@@ -30,12 +31,10 @@ def home(request):
             context = {
                 "bmi": bmi,
                 "category": category,
-                "calorie_adjustment": recommended_calories
+                "calories": recommended_calories
             }
 
         except Exception:
-            context = {
-                "error": "Please enter valid numbers"
-            }
+            context = {"error": "Please enter valid numbers"}
 
     return render(request, "bmi/home.html", context)

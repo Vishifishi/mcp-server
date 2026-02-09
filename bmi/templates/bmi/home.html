@@ -33,7 +33,10 @@
             border-radius: 10px;
             cursor: pointer;
         }
-        .result { margin-top: 20px; text-align: center; }
+        .result {
+            margin-top: 20px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -54,13 +57,12 @@
     </div>
     {% endif %}
 
-    {% if calories %}
+    {% if recommended_calories %}
     <div class="result">
-    <   h3>Recommended Daily Calories</h3>
-        <p><strong>{{ calories }} kcal/day</strong></p>
+        <h3>Recommended Daily Calories</h3>
+        <p><strong>{{ recommended_calories }} kcal/day</strong></p>
     </div>
     {% endif %}
-
 
     {% if error %}
         <p style="color:red">{{ error }}</p>
