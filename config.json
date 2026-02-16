@@ -1,0 +1,30 @@
+{
+  "oauth": {
+    "client_id": "40cbd672-3289-42be-9840-cf492d81769c",
+    "app_name": "Secure BMI MCP Server"
+  },
+  "server": {
+    "host": "0.0.0.0",
+    "port": 3005
+  },
+  "bmi": {
+    "base_calorie_multiplier": 30,
+    "categories": {
+      "underweight": {
+        "max": 18.5,
+        "calorie_adjustment": 300
+      },
+      "normal": {
+        "max": 25,
+        "calorie_adjustment": 0
+      },
+      "overweight": {
+        "max": 30,
+        "calorie_adjustment": -300
+      },
+      "obese": {
+        "calorie_adjustment": -500
+      }
+    }
+  }
+}
